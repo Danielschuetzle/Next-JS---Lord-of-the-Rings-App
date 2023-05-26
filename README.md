@@ -11,8 +11,6 @@ Welcome to the Lord of the Rings App! This is a Next.js application that allows 
 ## 🛠️ Installation Steps
 
 \`\`\`bash
-# Clone the repository
-git clone https://github.com/yourusername/your-repo-name.git
 
 # Change the working directory
 cd your-repo-name
