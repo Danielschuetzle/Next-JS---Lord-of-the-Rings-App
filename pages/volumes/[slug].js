@@ -1,12 +1,16 @@
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import { volumes } from "../../lib/data.js";
 
 export default function VolumeDetail() {
-  const volumeIndex = volumes.findIndex(
-    ({ slug }) => slug === "the-two-towers"
-  );
+  const router = useRouter();
+  const { slug } = router.query; // Get the slug from the URL
 
+  // Find the correct volume
+  const volumeIndex = volumes.findIndex(
+    ({ slug: volumeSlug }) => volumeSlug === slug
+  );
   const volume = volumes[volumeIndex];
   const nextVolume = volumes[volumeIndex + 1];
   const previousVolume = volumes[volumeIndex - 1];
