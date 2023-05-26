@@ -10,7 +10,6 @@ Welcome to the Lord of the Rings App! This is a Next.js application that allows 
 
 ## 🛠️ Installation Steps
 
-\`\`\`bash
 
 # Change the working directory
 cd your-repo-name
@@ -20,7 +19,6 @@ npm install
 
 # Run the app
 npm run dev
-\`\`\`
 
 🌟 You are all set!
 
